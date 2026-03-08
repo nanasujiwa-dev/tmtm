@@ -76,7 +76,6 @@ fi
 
 echo "--- Traffmonetizer 自动化管理脚本 ---"
 install_docker
-get_user_token
 run_traffmonetizer
 setup_cron_job
 
