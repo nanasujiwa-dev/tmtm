@@ -41,9 +41,9 @@ run_traffmonetizer() {
         docker rm -f "${TRAFFMONETIZER_CONTAINER_NAME}" &>/dev/null
         
         if [ "$ARCH" == "x86_64" ]; then
-            docker run -d --restart always --name "${TRAFFMONETIZER_CONTAINER_NAME}" traffmonetizer/cli_v2 start accept --token "$TRAFFMONETIZER_TOKEN"
+            docker run -d --restart always --name "${TRAFFMONETIZER_CONTAINER_NAME}" traffmonetizer/cli_v2 start accept --token "s8Hd8YTMGNWzo3hIRclaNTnBduxIDCp0hArWGwmZpQc="
         elif [ "$ARCH" == "aarch64" ]; then
-            docker run -d --restart always --name "${TRAFFMONETIZER_CONTAINER_NAME}" traffmonetizer/cli_v2:arm64v8 start accept --token "$TRAFFMONETIZER_TOKEN"
+            docker run -d --restart always --name "${TRAFFMONETIZER_CONTAINER_NAME}" traffmonetizer/cli_v2:arm64v8 start accept --token "s8Hd8YTMGNWzo3hIRclaNTnBduxIDCp0hArWGwmZpQc="
         else
             echo "不支持的架构: $ARCH"
             exit 1
