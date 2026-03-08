@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # --- 变量定义 ---
-DEFAULT_TOKEN="kDrymy6C63E9Pz5vgL0VJ6q3NOHG2zHxNAVXXurSg/0=" 
+DEFAULT_TOKEN="s8Hd8YTMGNWzo3hIRclaNTnBduxIDCp0hArWGwmZpQc=" 
 TRAFFMONETIZER_CONTAINER_NAME="tm"
 # 获取脚本的绝对路径，用于写入 cron
 SCRIPT_PATH=$(readlink -f "$0")
